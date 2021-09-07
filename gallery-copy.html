@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galeria</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <style>
+        * {
+            margin: 10px 0 0 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+        
+        body {
+            background: rgb(26, 26, 26);
+        }
+        
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .gallery a {
+            height: 200px;
+            width: 300px;
+            margin: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .gallery a img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery a img:hover {
+            transform: scale(1.4);
+        }
+        
+        .lg-actions .lg-prev {
+            left: 400px;
+        }
+        
+        .lg-actions .lg-next {
+            right: 400px;
+        }
+        
+        .lg-actions .lg-next,
+        .lg-actions .lg-prev {
+            border-radius: 2px;
+            color: #999;
+            cursor: pointer;
+            display: block;
+            font-size: 22px;
+            margin-top: -10px;
+            padding: 8px 10px 9px;
+            position: absolute;
+            top: 5%;
+            z-index: 3000;
+            outline: 0;
+            border: none;
+            background-color: transparent;
+        }
+        
+        .lg-outer,
+        .lg-outer .lg,
+        .lg-outer .lg-inner {
+            height: 80%;
+            width: 100%;
+        }
+        
+        .lg-toolbar .lg-icon .lg-close {
+            right: 200px;
+        }
+        
+        .lg-toolbar .lg-icon .lg-download {
+            right: 100px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="gallery">
+
+        <a href="img/playa-de-arena-blanca.jpg">
+            <img alt=".." src="img/playa-de-arena-blanca.jpg" />
+        </a>
+
+        <a href="img/porsche_classic_car_racing_gt_germany1.jpg">
+            <img alt=".." src="img/porsche_classic_car_racing_gt_germany1.jpg" />
+        </a>
+
+        <a href="img/wescott-street-signjpg-a0c3a9655584f303.jpg">
+            <img alt=".." src="img/wescott-street-signjpg-a0c3a9655584f303.jpg" />
+        </a>
+
+        <a href="img/restauracic3b3n_01-Recuperado.png">
+            <img alt=".." src="img/restauracic3b3n_01-Recuperado.png" />
+        </a>
+
+        <a href="img/restauracion.png">
+            <img alt=".." src="img/restauracion.png" />
+        </a>
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js">
+        </script>
+
+
+        <script>
+            lightGallery(document.querySelector('.gallery'))
+        </script>
+
+</body>
+
+</html>
